@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="all.css"> -->
+    <!-- <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/fe79ec7b29.js" crossorigin="anonymous"></script>
+    <title>Expense App</title>
+</head>
+<body>
+    <header>
+        <div class="container row">
+            <h1 class="title">Personal Expense</h1>
+            <div id="headingTotal">
+                <h1>Total:</h1>
+                <h1 id="TotalAmount">0</h1>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container input-section">        
+            <div class="entry">
+                <div class="input-group">
+                    <div class="input-group-text">
+                        <input type="text" id="inputAmount" placeholder="Amount spent">
+                    </div>
+                    <div class="input-group-append">
+                        <span id="input-append" >$</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-group-text">
+                        <input type="text" id="expense-desc" placeholder="expense-on">
+                    </div>
+                    <div class="input-button-append ">
+                        <button id="addbtn">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="item-list-container">
+        
+
+        <ul id="list-group">
+            <!-- <li class="list-group-items">
+                <div class="col-1">
+                    <h3 class="list-item-name">Tshirt</h3>
+                    <small class="list-item-time">April 30, 2021</small>
+                </div>
+                <div class="col-2">
+                    <h3>500</h3>
+                </div>
+                <div class="col-3">
+                    <button class="delete-btn">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+            </li>
+            
+            <li class="list-group-items">
+                <div class="col-1">
+                    <h3 class="list-item-name">Tshirt</h3>
+                    <small class="list-item-time">April 30, 2021</small>
+                </div>
+                <div class="col-2">
+                    <h3>500</h3>
+                </div>
+                <div class="col-3">
+                    <button class="delete-btn">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+            </li> -->
+        </ul>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>

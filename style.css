@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Font Awesome 5 Free";
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+header{
+    background-color: #667292;
+    color: #fff;
+    /* text-align: center; */
+    padding: 1em;
+}
+.main{
+    /* margin-top: 1em; */
+    background-color: #8d9db6;
+    padding: 2em;
+}
+.input-section{
+    background-color: #e6ebeb;
+    padding: 2em 0;
+}
+.row{
+    display: flex;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.title{
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1em 0;
+}
+
+#headingTotal{
+    margin: 0 auto;
+    text-align: end;
+    width: 50%;
+    padding-top: 2em;
+}
+.entry{
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em 0;
+    gap: 10px;
+}
+
+.input-group{
+    display: flex;
+}
+.input-group-text{
+    width: 80%;
+    border-right: none;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+    border-right: none;
+}
+  
+input[type=text]:focus {
+    border: 3px solid #555;
+    /* border-right: none; */
+}
+.input-group-append{
+    width: 20%;
+    /* padding: 10px 20px; */
+    border: 3px solid rgb(204, 204, 204);
+}
+#input-append{
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+#addbtn{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 10px;
+    border: none;
+    background-color: #e6ebeb ;
+    color: #fff;
+    background-color: blue;
+}
+
+.input-button-append{
+    width: 20%;
+    border: 3px solid #1559c2;
+    background-color: blue;
+}
+
+.item-list-container{
+    background-color: #bccad6;
+    display: flex;
+    padding: 2em 0;
+}
+
+#expense_table{
+    margin: 0 auto;
+    width: 50%;
+    background-color: #fff;
+    /* border: 1px solid grey; */
+}
+
+#list-group{
+    width: 80%;
+    margin: 0 auto;
+}
+.list-group-items{
+    display: flex;
+    padding: 1em;
+    border: 1px solid #e6ebeb;
+    border-top: none;
+    background-color: #fff;
+}
+
+ul:first-child{
+    border-top: 1px solid #e6ebeb;
+}
+.col-1{
+    width: 60%;
+}
+.col-2{
+    width: 20%;
+    padding-top: 10px;
+    text-align: center;
+}
+.col-3{
+    width: 20%;
+}
+
+.delete-btn{
+    cursor: pointer;
+    width: 100%;
+    max-width: 50px;
+    display: inline-block;
+    padding: 10px 10px;
+    border: none;
+    color: red;
+    background-color: #fff;
+    
+}
+
+ul li:nth-child(even){
+    background-color: #f1e3dd;
+}
+
+ul li:nth-child(even) .delete-btn{
+    background-color: #f1e3dd;
+}
+
+.delete-btn:hover{
+    color: #fff;
+    background-color: red;
+}
+
+ul li:nth-child(even) .delete-btn:hover{
+    color: #fff;
+    background-color: red;
+}
+
+.list-item-name,.col-2{
+    font-size: 1.5rem;
+}
+
