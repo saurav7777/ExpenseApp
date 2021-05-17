@@ -29,8 +29,8 @@ function addExpenseToTotal(){
     } 
     
     
-    deleteitem(textdesc)
-    
+    deleteExistingitem(textdesc)
+
     const expense = parseInt(textAmount,10);
     expenseObj.Amount = expense;
     expenseObj.desc = textdesc;
@@ -139,7 +139,7 @@ function deleteitem(datestring){
     expenseList=filteredarr;
     renderList(filteredarr)
 }
-function deleteitem(item){
+function deleteExistingitem(item){
 
     const filteredarr = expenseList.filter((expense)=>{
         if(expense.desc.valueOf() !== item) {
