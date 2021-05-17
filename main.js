@@ -23,14 +23,22 @@ function addExpenseToTotal(){
     
     let expenseObj = {};
     
+    if(isNaN(textAmount)){
+        alert("InValid Input")
+        return;
+    } 
+    
+    
+    deleteitem(textdesc)
+    
     const expense = parseInt(textAmount,10);
     expenseObj.Amount = expense;
     expenseObj.desc = textdesc;
     expenseObj.moment = new Date();
     totalExpense += expense;
-
+    console.log(textdesc)
     expenseList.push(expenseObj);
-    console.log({expenseList});
+    // console.log({expenseList});
     headingele.textContent = totalExpense;
 
     addchildnode(expenseObj)
@@ -48,7 +56,7 @@ function addchildnode(expenseObj){
     newli.classList.add("list-group-items")
     newli.innerHTML = `
             <div class="col-1">
-                <h3 class="list-item-name">${expenseObj.textdesc}</h3>
+                <h3 class="list-item-name">${expenseObj.desc}</h3>
                 <small class="list-item-time">${getDateString(expenseObj.moment)}</small>
             </div>
             <div class="col-2">
@@ -128,6 +136,18 @@ function deleteitem(datestring){
     //     )
 
 
+    expenseList=filteredarr;
+    renderList(filteredarr)
+}
+function deleteitem(item){
+
+    const filteredarr = expenseList.filter((expense)=>{
+        if(expense.desc.valueOf() !== item) {
+            return expense
+        }else{
+            totalExpense = totalExpense - expense.Amount
+        }
+    })
     expenseList=filteredarr;
     renderList(filteredarr)
 }
